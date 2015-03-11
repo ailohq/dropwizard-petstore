@@ -9,6 +9,7 @@ dataSource:
     hibernate.hbm2ddl.auto: create
 
 server:
+  rootPath: '/api/*'
   type: simple
   applicationContextPath: /
   adminContextPath: /admin

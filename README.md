@@ -27,20 +27,6 @@ If you are not already familiar with Dropwizard, check out [Getting Started](htt
                 +- resources
                       +- fixtures
 
-### New Relic Setup
-Update `newrelic/newrelic.yml` with your api key and application name.
-
-Alternatively you can set ENV variables for `NEW_RELIC_APP_NAME` and `NEW_RELIC_API_KEY` which will replace your newrelic.yml config
-
-### BinTray Setup
-To upload your fatjar into bintray, update `gradle/bintray.gradle` file with your bintray repository information.
-
-Also update `~/.gradle/gradle.properties` with your `bintrayUserName` and `bintrayApiKey`
-
-Then run:
-
-        gradle bintrayUpload
-
 ## Running The Application
 To test the example application run the following commands.
 
@@ -56,3 +42,19 @@ To test the example application run the following commands.
 * To run the application run.
 
         gradle run
+
+## Usage
+Use either a browser or a REST client such as [PostMan](https://chrome.google.com/webstore/detail/postman-rest-client-packa/fhbjgbiflinjbdggehcddcbncdddomop?hl=en)
+
+* You RESTful APIs are available here:
+
+    http://localhost:8080/api/*
+    http://localhost:8080/api/admin
+
+* Static HTML pages are here:
+
+    http://localhost:8080/
+
+* [Swagger](http://swagger.io/) API are here:
+
+    http://localhost:8080/api/api-docs

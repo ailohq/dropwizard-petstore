@@ -1,8 +1,8 @@
 package com.example;
 
-import com.bazaarvoice.dropwizard.assets.AssetsBundleConfiguration;
-import com.bazaarvoice.dropwizard.assets.AssetsConfiguration;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.nefariouszhen.dropwizard.assets.AssetsBundleConfiguration;
+import com.nefariouszhen.dropwizard.assets.AssetsConfiguration;
 import io.dropwizard.Configuration;
 import io.dropwizard.client.JerseyClientConfiguration;
 import io.dropwizard.db.DataSourceFactory;

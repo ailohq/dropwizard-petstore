@@ -11,8 +11,9 @@ dataSource:
     hibernate.hbm2ddl.auto: create
 
 server:
+  rootPath: '/api/*'
   type: simple
-  applicationContextPath: /api
+  applicationContextPath: /
   adminContextPath: /api/admin
   connector:
     type: http

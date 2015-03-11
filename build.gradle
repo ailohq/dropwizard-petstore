@@ -27,8 +27,7 @@ dependencies {
     compile "io.dropwizard.modules:dropwizard-java8:${dropwizardJava8Version}"
     compile "io.dropwizard.modules:dropwizard-java8-auth:${dropwizardJava8Version}"
 
-    compile "com.bazaarvoice.dropwizard:dropwizard-configurable-assets-bundle:0.2.2"
-
+    compile "com.nefariouszhen.dropwizard:dropwizard-configurable-assets-bundle:${configBundleVersion}"
     compile "de.thomaskrille:dropwizard-template-config:${templateConfigVersion}"
     compile "com.hubspot.dropwizard:dropwizard-guice:${dropwizardGuiceVersion}"
     compile("com.netflix.governator:governator:${governatorVersion}") {

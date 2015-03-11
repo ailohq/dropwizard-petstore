@@ -1,7 +1,7 @@
 package com.example;
 
-import com.bazaarvoice.dropwizard.assets.ConfiguredAssetsBundle;
 import com.hubspot.dropwizard.guice.GuiceBundle;
+import com.nefariouszhen.dropwizard.assets.ConfiguredAssetsBundle;
 import com.netflix.governator.guice.LifecycleInjector;
 import com.wordnik.swagger.config.ConfigFactory;
 import com.wordnik.swagger.config.ScannerFactory;
@@ -30,17 +30,16 @@ public class PetStore extends Application<PetStoreConfiguration> {
 
     @Override
     public void initialize(final Bootstrap<PetStoreConfiguration> bootstrap) {
+        bootstrap.addBundle(new ConfiguredAssetsBundle( "/assets/", "/", "index.html" ) );
         bootstrap.addBundle(new Java8Bundle());
         bootstrap.addBundle(new TemplateConfigBundle());
         bootstrap.addBundle(migrationsBundle);
         bootstrap.addBundle(hibernateBundle);
         bootstrap.addBundle(guiceGovernatorBundle);
-        bootstrap.addBundle( new ConfiguredAssetsBundle( "/assets/", "/", "index.html" ) );
     }
 
     @Override
     public void run(PetStoreConfiguration configuration, Environment environment) throws Exception {
-        environment.jersey().setUrlPattern( "/api/*" );
         setUpSwagger(environment);
     }
 
