@@ -1,4 +1,4 @@
-box: mihkels/java8-oracle@0.0.1
+box: wdinau/java8@0.0.1
 build:
   steps:
     - script:
@@ -9,9 +9,9 @@ build:
             java -version
             javac -version
     - script:
-        name: run gradle
+        name: run gradle build and test
         code: |
-            gradle --full-stacktrace -q --project-cache-dir=$WERCKER_CACHE_DIR clean build
+            ./gradlew --full-stacktrace -q --project-cache-dir=$WERCKER_CACHE_DIR clean build
 deploy:
   steps:
     - heroku-deploy
