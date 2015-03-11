@@ -1,4 +1,4 @@
-box: wdinau/java8@0.0.1
+box: mihkels/java8-oracle@0.0.1
 build:
   steps:
     - script:
@@ -9,7 +9,7 @@ build:
             java -version
             javac -version
     - script:
-        name: run gradle build and test
+        name: run gradle
         code: |
             ./gradlew --full-stacktrace -q --project-cache-dir=$WERCKER_CACHE_DIR clean build
 deploy:
