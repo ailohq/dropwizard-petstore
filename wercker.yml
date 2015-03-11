@@ -1,0 +1,11 @@
+box: wercker/android
+# Build definition
+build:
+  # The steps that will be executed on build
+  steps:
+    - script:
+        name: build package
+        code: ./gradlew clean build
+deploy:
+  steps:
+    - heroku-deploy

@@ -58,3 +58,11 @@ Use either a browser or a REST client such as [PostMan](https://chrome.google.co
 * [Swagger](http://swagger.io/) API are here:
 
     http://localhost:8080/api/api-docs
+
+* Continuous Deployment wise, this project includes:
+
+    Dockerfile to help it to build a docker image
+
+    wercker.yml to help this run at wercker CI
+
+    Procfile to help this application to be deployed in Heroku
