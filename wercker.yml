@@ -1,11 +1,17 @@
-box: wercker/android
-# Build definition
+box: mihkels/java8-oracle@0.0.1
 build:
-  # The steps that will be executed on build
   steps:
     - script:
-        name: build package
-        code: ./gradlew clean build
+        name: Show base information
+          code: |
+            gradle -v
+            echo $JAVA_HOME
+            java -version
+            javac -version
+      - script:
+          name: Run gradle
+          code: |
+            gradle --full-stacktrace -q --project-cache-dir=$WERCKER_CACHE_DIR clean build
 deploy:
   steps:
     - heroku-deploy
