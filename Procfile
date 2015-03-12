@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -jar -Dport=$PORT build/libs/dropwizard-petstore.jar server pet-store.yml
+web: java $JAVA_OPTS -jar -Dport=$PORT build/pet-store.jar server pet-store.yml
