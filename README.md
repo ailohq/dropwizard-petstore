@@ -1,3 +1,4 @@
+[![wercker status](https://app.wercker.com/status/5efb91bf7b7db2551da9d2b2eeff8d54/m "wercker status")](https://app.wercker.com/project/bykey/5efb91bf7b7db2551da9d2b2eeff8d54)
 # Introduction
 You have created an dropwizard application using lazybones. This application uses dropwizard 0.8.0 version.
 
