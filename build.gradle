@@ -46,4 +46,5 @@ dependencies {
     testCompile "io.dropwizard:dropwizard-testing:${dropwizardVersion}"
 }
 
+task stage(dependsOn: ['clean', 'shadowJar'])
 apply from: 'gradle/shadow.gradle'
