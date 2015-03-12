@@ -1,0 +1,546 @@
+body {
+    font-size: 16px;
+    font-family: "Ubuntu", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 300;
+    line-height: 21px;
+    color: #333;
+    height: 100%;
+}
+
+h2 {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 42px;
+    line-height: 53px;
+}
+
+h3 {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: #e1562b;
+}
+
+button {
+    margin: 10px 5px 10px 0;
+    padding: .85em 1.25em;
+    color: #333;
+    font-size: 100%;
+    border: solid 1px #fdba25;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fdba25;
+}
+
+button:active,
+button:hover {
+    color: #fdba25;
+    background-color: transparent;
+}
+
+footer a:active,
+footer a:hover {
+    text-decoration: underline;
+}
+
+.business button:active,
+.business button:hover {
+    color: black;
+    background-color: rgba(253, 186, 37, 0.65);
+}
+
+.main-container {
+    width: 100%;
+    position: relative;
+}
+
+.section {
+    min-height: 300px;
+    padding: 115px 0 90px 0;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+}
+
+.content {
+    width: 100%;
+    margin: 0 11em;
+    padding: 1.25em 0;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.logo {
+    position: absolute;
+    left: 0px;
+}
+
+.logo img {
+    width: auto;
+    height: 70px;
+    margin-top: 1px;
+    margin-left: 30px;
+}
+
+.nav {
+    margin: 20px 30px 20px 0;
+    position: absolute;
+    right: 0px;
+    border: none;
+}
+
+.navbar-default {
+    height: 90px;
+    border-radius: 0;
+    background-color: rgba(0,0,0,.88);
+    background-image: none;
+    border: none;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: white;
+    background-color: transparent;
+    border-color: transparent;
+    background-image: none;
+    border-bottom: solid 1px white;
+    border-radius: 0;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+    color: white;
+}
+
+.navbar-brand {
+    padding: 10px;
+}
+
+.navbar-toggle {
+    margin-right: 24px;
+    padding: 10px 10px;
+    margin-top: 25px;
+}
+
+.navbar-toggle .icon-bar {
+    width: 35px;
+    height: 4px;
+}
+
+.nav-tabs>li>a {
+    color: rgba(255,255,255,.75);
+}
+
+.nav-tabs>li>a:hover {
+    border-color: transparent;
+    border-bottom: solid 1px #EEE;
+}
+
+.nav-item {
+    -webkit-font-smoothing: antialiased;
+}
+
+.nav-item a,
+.navbar-default .navbar-nav>li>a {
+    color: rgba(255,255,255,.8);
+}
+
+.nav-item a:active,
+.nav-item a:hover {
+    color: white;
+}
+
+.navbar-default .navbar-toggle {
+    border: none;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: white;
+}
+
+.team-members {
+    margin-bottom: 60px;
+}
+
+.team-members li {
+    -webkit-perspective: 1000;
+    perspective: 1000;
+}
+
+.team-member {
+    margin: 5px;
+    width: 150px;
+    height: 150px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    background-color: #EEE;
+    position: relative;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+}
+
+.team-member span {
+    position: relative;
+    top: 36%;
+}
+
+.flip-container:hover .flip-card {
+    -webkit-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-container {
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+
+.flip-card {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+    cursor: pointer;
+    backface-visibility: hidden;
+}
+
+.face {
+    width: 150px;
+    height: 150px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.face.back {
+    -webkit-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+    background-color: #fdba25;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.left {
+    width: 45%;
+    text-align: left;
+    float: left;
+}
+
+.right {
+    width: 45%;
+    margin: 1.55em 0 0 2.5em;
+    float: right;
+}
+
+.right .flex-container {
+    justify-content: center;
+}
+
+.description {
+    margin-bottom: 40px;
+}
+
+.apply-now,
+.get-in-touch {
+    display: inline-block;
+}
+
+.benefit img {
+    width: 160px;
+    height: 160px;
+    margin: 6px;
+}
+
+.contact-details {
+    margin-bottom: 20px;
+}
+
+.contact-details .lines {
+    display: inline-block;
+}
+
+.business {
+    padding-top: 130px;
+    color: white;
+    background-color: #e1562b;
+    background-image: url("img/ldp.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.business .content {
+    margin: 0 18em;
+    text-shadow: 0 1px 2px #333;
+}
+
+.team {
+    background-color: rgba(253, 186, 37, 0.15);
+}
+
+.team .content {
+    margin: 0 14em;
+}
+
+.work-with-us .content {
+    margin: 0 9em;
+}
+
+.contact {
+    color: white;
+    background-color: #e1562b;
+    background-image: url("img/ldp.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+}
+
+.contact .content {
+    text-shadow: 0 1px 2px #333;
+}
+
+.contact a {
+    color: #333;
+    text-shadow: none;
+}
+
+.contact a:active,
+.contact a:hover {
+    color: black;
+}
+
+.social {
+    min-height: 10px;
+    background-color: #EEE;
+}
+
+.social.section {
+    padding: 80px 0;
+}
+
+.to-top {
+    padding: .5em 0;
+    text-align: center;
+}
+
+@media only screen and (max-width : 1052px) {
+    .work-with-us .content {
+        margin: 0 6em;
+    }
+}
+
+@media only screen and (max-width : 979px) {
+    .business .content {
+        margin: 0 6em;
+    }
+
+    .team .content,
+    .contact .content {
+        margin: 0 5em;
+    }
+
+    .social.section {
+        padding: 65px 10px;
+    }
+
+    .benefit img {
+        width: 150px;
+        height: 150px;
+        margin: 4px;
+    }
+}
+
+@media only screen and (max-width : 767px) {
+    .nav {
+        padding-left: 50px;
+        position: inherit;
+    }
+
+    .navbar-header {
+        height: 90px;
+    }
+
+    .navbar-default .navbar-nav>a {
+        background-color: #EEE;
+    }
+
+    .navbar-default .navbar-collapse,
+    .navbar-default .navbar-form {
+        background-color: white;
+        -webkit-box-shadow: 0 1px 3px #EEE;
+        box-shadow: 0 1px 3px #EEE;
+    }
+
+    .nav-item a,
+    .navbar-default .navbar-nav>li>a {
+        color: #333;
+        background-color: white;
+        border-radius: 0;
+    }
+
+    .navbar-default .navbar-nav>li>a:hover,
+    .navbar-default .navbar-nav>li>a:focus {
+        color: black;
+    }
+
+    .navbar-default .navbar-nav>.active>a {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .navbar-default .navbar-nav>.active>a,
+    .navbar-default .navbar-nav>.active>a:hover,
+    .navbar-default .navbar-nav>.active>a:focus {
+        background-color: white;
+        color: #e1562b;
+    }
+
+    .nav-tabs>li {
+        float: none;
+    }
+
+    .nav-tabs>li:hover {
+        background-color: #EEE;
+    }
+
+    .nav-tabs>li>a:hover {
+        border-color: transparent;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .benefit img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .social.section {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media only screen and (max-width : 649px) {
+    .team-member,
+    .team-member img,
+    .face {
+        width: 100px;
+        height: 100px;
+    }
+
+    .team-member span {
+        top: 28%;
+    }
+
+}
+
+@media only screen and (max-width : 480px) {
+    .business .content,
+    .work-with-us .content {
+        margin: 0 3em;
+    }
+
+    .team .content,
+    .contact .content {
+        margin: 0 2em;
+    }
+
+    .social.section {
+        padding: 30px 20px;
+    }
+
+    .work-with-us h3 {
+        font-size: 27px;
+        line-height: 35px;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width : 320px) {
+    .navbar-default {
+        height: 80px;
+    }
+
+    .navbar-toggle {
+        margin-right: 16px;
+        margin-top: 20px;
+    }
+
+    .logo img {
+        height: 58px;
+        margin-left: 16px;
+    }
+
+    .business {
+        padding-top: 95px;
+    }
+
+    .business .content {
+        margin: 0 1.5em;
+    }
+
+    .team .content,
+    .contact .content {
+        margin: 0px 1em;
+    }
+}
