@@ -67,3 +67,6 @@ Use either a browser or a REST client such as [PostMan](https://chrome.google.co
     wercker.yml to help this run at wercker CI
 
     Procfile to help this application to be deployed in Heroku
+
+## Code Style Guide
+Use default IntelliJ setting for Java. If you use Eclipse or other IDE, please follow the example code style in this project.
