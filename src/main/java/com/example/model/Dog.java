@@ -1,14 +1,9 @@
 package com.example.model;
 
-import javax.validation.constraints.NotNull;
-import com.wordnik.swagger.annotations.ApiModel;
-import com.wordnik.swagger.annotations.ApiModelProperty;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.wordnik.swagger.annotations.ApiModel;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "dog")
@@ -17,12 +12,11 @@ public class Dog {
 
     @Id
     @JsonProperty
-    @NotNull
-    @ApiModelProperty(required=true)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @Column
     @JsonProperty
-    private String message;
+    private String name;
 
 }
